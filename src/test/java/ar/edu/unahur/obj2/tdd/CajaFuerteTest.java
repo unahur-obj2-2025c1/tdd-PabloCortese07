@@ -7,4 +7,11 @@ import org.junit.jupiter.api.Test;
 
 public class CajaFuerteTest {
 
+    final private CajaFuerte nuevaCaja = new CajaFuerte();
+
+    void abrirLaCaja(){
+        nuevaCaja.abrir(1234);
+        assertTrue(nuevaCaja.estaAbierta());
+    }
+
 }
